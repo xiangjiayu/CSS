@@ -1,0 +1,244 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+.colBlue {
+  color: #00B7FF;
+}
+.bgcolBlue {
+  background-color: #00B7FF;
+}
+.bgcolbeige {
+  background-color: beige;
+}
+.borlr {
+  border-left: 1px solid #fff;
+  border-right: 1px solid #fff;
+}
+.fz12 {
+  font-size: 12px;
+}
+.fz16 {
+  font-size: 16px;
+}
+.fz20 {
+  font-size: 20px;
+}
+.fz30 {
+  font-size: 30px;
+}
+.fz40 {
+  font-size: 40px;
+}
+h1 {
+  justify-content: center;
+  display: flex;
+  padding: 20px;
+  font-size: 40px;
+}
+h2 {
+  padding: 30px 20px;
+  background-color: #eee;
+}
+h3 {
+  padding: 20px 50px;
+  margin: 30px 0;
+  border-bottom: 1px solid #e8e8e8;
+  box-shadow: 0 5px 10px #eee;
+}
+h3 span {
+  margin-left: 20px;
+  color: #00B7FF;
+}
+h3 p {
+  font-size: 14px;
+  color: #666;
+  margin-top: 10px;
+  font-weight: normal;
+}
+.content-div {
+  background-color: #00B7FF;
+  color: #fff;
+  padding: 20px;
+  margin: 10px 50px;
+  position: relative;
+}
+.d-flex {
+  display: flex;
+}
+/*1.水平位置*/
+.justify-flex-start,
+.justify-center,
+.justify-flex-end,
+.justify-space-between,
+.justify-space-around {
+  display: flex;
+}
+.justify-flex-start {
+  justify-content: flex-start;
+}
+.justify-flex-end {
+  justify-content: flex-end;
+}
+.justify-center {
+  justify-content: center;
+}
+.justify-space-between {
+  justify-content: space-between;
+}
+.justify-space-around {
+  justify-content: space-around;
+}
+.shuip .justify-flex-start,
+.shuip .justify-center,
+.shuip .justify-flex-end,
+.shuip .justify-space-between,
+.shuip .justify-space-around {
+  padding: 20px 0;
+}
+.shuip .justify-flex-start div,
+.shuip .justify-center div,
+.shuip .justify-flex-end div,
+.shuip .justify-space-between div,
+.shuip .justify-space-around div {
+  width: 200px;
+  padding: 10px 0;
+  color: #333;
+  background-color: beige;
+  display: flex;
+  justify-content: center;
+}
+/*2.垂直位置*/
+.alignitems-flex-start,
+.alignitems-center,
+.alignitems-flex-end {
+  display: flex;
+}
+.alignitems-flex-start {
+  align-items: flex-start;
+}
+.alignitems-center {
+  align-items: center;
+}
+.alignitems-flex-end {
+  align-items: flex-end;
+}
+.alignitems-stretch {
+  align-items: stretch;
+}
+.alignitems-baseline {
+  align-items: baseline;
+}
+.chuiz .alignitems-flex-start,
+.chuiz .alignitems-center,
+.chuiz .alignitems-flex-end,
+.chuiz .alignitems-stretch,
+.chuiz .alignitems-baseline {
+  display: flex;
+  justify-content: space-between;
+  padding: 0;
+  height: 100px;
+}
+.chuiz .alignitems-flex-start div,
+.chuiz .alignitems-center div,
+.chuiz .alignitems-flex-end div,
+.chuiz .alignitems-stretch div,
+.chuiz .alignitems-baseline div {
+  width: 200px;
+  background-color: beige;
+  color: #333;
+  display: flex;
+  justify-content: center;
+}
+.chuiz .alignitems-baseline div {
+  padding: 20px 0;
+}
+.chuiz .alignitems-baseline .line {
+  width: 100%;
+  height: 1px;
+  background-color: #000;
+  position: absolute;
+  top: 52px;
+  left: 0;
+}
+.alignself {
+  padding: 0;
+  height: 100px;
+  display: flex;
+  justify-content: space-between;
+}
+.alignself div {
+  background-color: beige;
+  width: 200px;
+  height: 40px;
+  color: #333;
+  justify-content: center;
+  display: flex;
+  align-items: center;
+}
+.alignself div.self {
+  align-self: flex-end;
+}
+/*排列占位*/
+.flex-grow {
+  display: flex;
+}
+.flex-grow div {
+  display: flex;
+  justify-content: center;
+  padding: 10px 0;
+  color: #333;
+  background-color: beige;
+}
+.flex-grow div:nth-child(2n) {
+  border-left: 1px solid #fff;
+  border-right: 1px solid #fff;
+}
+.flex-grow .flex-grow1 {
+  flex-grow: 1;
+}
+.flex-grow .flex-grow2 {
+  flex-grow: 2;
+}
+.order {
+  display: flex;
+}
+.order div {
+  background-color: beige;
+  flex-grow: 1;
+  display: flex;
+  justify-content: center;
+  color: #333;
+  padding: 10px 0;
+}
+.order div:nth-child(2n) {
+  border-left: 1px solid #fff;
+  border-right: 1px solid #fff;
+}
+.order div.order1 {
+  order: 4;
+}
+.order div.order2 {
+  order: 3;
+}
+.order div.order3 {
+  order: 2;
+}
+.order div.order4 {
+  order: 1;
+}
+.order div.order5 {
+  order: 0;
+}
+.xinde {
+  padding: 20px 50px;
+  line-height: 25px;
+}
+.zzaddress {
+  padding: 20px 50px;
+}
+.zzaddress a {
+  color: red;
+  display: block;
+  margin-top: 10px;
+}

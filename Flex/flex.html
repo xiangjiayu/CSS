@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title>Flex布局 学习</title>
+    <link rel="stylesheet" href="css/flex.css"/>
+</head>
+<body>
+    <h1>Flex布局---------author/xiangjiayu</h1>
+    <h2>元素位置</h2>
+    <!--1-->
+    <h3>1.水平位置<span>justify-content</span></h3>
+    <div class="shuip">
+        <div class="content-div justify-flex-start">
+            <div>justify-content:flex-start</div>
+        </div>
+        <div class="content-div justify-center">
+            <div>justify-content:center</div>
+        </div>
+        <div class="content-div justify-flex-end">
+            <div>justify-content:flex-end</div>
+        </div>
+        <div class="content-div justify-space-between">
+            <div>justify</div>
+            <div>content</div>
+            <div>between</div>
+        </div>
+        <div class="content-div justify-space-around">
+            <div>justify</div>
+            <div>content</div>
+            <div>space-around</div>
+        </div>
+    </div>
+    <!--2-->
+    <h3>2.垂直位置<span>align-items</span></h3>
+    <div class="chuiz">
+        <div class="content-div alignitems-flex-start">
+            <div>flex-start</div>
+            <div>flex-start<br/> flex-start</div>
+            <div>flex-start<br/> flex-start <br/> flex-start</div>
+        </div>
+        <div class="content-div alignitems-center">
+            <div>flex-center</div>
+            <div>flex-center<br/> flex-center</div>
+            <div>flex-center<br/> flex-center<br/> flex-center</div>
+        </div>
+        <div class="content-div alignitems-flex-end">
+            <div>flex-end</div>
+            <div>flex-end<br/> flex-end</div>
+            <div>flex-end<br/> flex-end<br/> flex-end</div>
+        </div>
+        <div class="content-div alignitems-stretch">
+            <div><div class="alignitems-center">stretch</div></div>
+            <div><div class="alignitems-center">stretch<br/> stretch</div></div>
+            <div><div class="alignitems-center">stretch<br/> stretch<br/> stretch</div></div>
+        </div>
+        <div class="content-div alignitems-baseline">
+            <div class="fz16">baseline</div>
+            <div class="fz20">baseline</div>
+            <div class="fz40">baseline</div>
+            <span class="line"></span>
+        </div>
+    </div>
+    <!--3-->
+    <h3>3.单个元素的对齐方式<span>align-self</span>
+        <p>属性允许单个项目有与其他项目不一样的对齐方式，可覆盖align-items属性</p>
+    </h3>
+    <div class="content-div alignself">
+        <div>align</div>
+        <div class="self">align</div>
+        <div>align</div>
+        <div class="self">align-self</div>
+        <div>align</div>
+    </div>
+
+    <h2>Flex属性</h2>
+    <h3>占位Flex<span>flex-grow</span>
+        <p>flex属性是flex-grow, flex-shrink 和 flex-basis的简写，默认值为0 1 auto。后两个属性可选。</p>
+    </h3>
+    <div class="paizhan">
+        <div class="content-div flex-grow">
+            <div class="flex-grow1">1</div>
+            <div class="flex-grow1">1</div>
+            <div class="flex-grow1">1</div>
+        </div>
+        <div class="content-div flex-grow">
+            <div class="flex-grow1">1</div>
+            <div class="flex-grow2">2</div>
+            <div class="flex-grow1">1</div>
+        </div>
+        <div class="content-div flex-grow">
+            <div class="flex-grow1">1</div>
+            <div class="flex-grow1">1</div>
+            <div class="flex-grow2">2</div>
+            <div class="flex-grow1">1</div>
+            <div class="flex-grow1">1</div>
+        </div>
+    </div>
+    <h3>排列Flex<span>order</span>
+        <p>属性定义项目的排列顺序。数值越小，排列越靠前，默认为0。</p>
+    </h3>
+    <div class="pail">
+        <div class="content-div order">
+            <div class="order1">1</div>
+            <div class="order2">2</div>
+            <div class="order3">3</div>
+            <div class="order4">4</div>
+            <div class="order5">5</div>
+        </div>
+    </div>
+    <div class="xinde">
+        注：在写IOS中的时候需要用驼峰写法：<br/>
+        如：justify-content ---- justifyContent(ios)
+    </div>
+    <div class="zzaddress">
+        学习地址:
+        <a target="_blank" href="http://www.ruanyifeng.com/blog/2015/07/flex-grammar.html?utm_source=tuicool">http://www.ruanyifeng.com/blog/2015/07/flex-grammar.html?utm_source=tuicool</a>
+    </div>
+</body>
+</html>
